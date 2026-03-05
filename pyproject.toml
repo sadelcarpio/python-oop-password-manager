@@ -1,0 +1,6 @@
+[project]
+name = "python-oop-password-manager"
+version = "0.1.0"
+description = "Proyecto de Programación Orientada a Objetos: Construye un Administrador de Contraseñas"
+requires-python = ">=3.13"
+dependencies = []
