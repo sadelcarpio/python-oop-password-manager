@@ -52,7 +52,8 @@ responsable de construirlos (el usuario mediante el programa, la clase `Password
 hecho login primero). Con `try` y `except` puedes manejar estos errores de manera adecuada.
 
 ## Sugerencias / Ayuda
-- Puede que sea necesaria una librería para encriptación y desencriptación. Recomiendo `bcrypt`.
+- Puede que sea necesaria una librería para encriptación y desencriptación. Recomiendo `bcrypt` para hashing y verificación, 
+`cryptography` para algoritmos de encriptación.
 Preguntar a Sergio en el canal de WhatsApp.
 - Puedes usar cualquier versión de Python. Te recomiendo una versión superior a 3.8, y utilizar un entorno virtual para el proyecto (
 recomendable `venv` o `uv`
