@@ -21,7 +21,8 @@ Consideremos nuestro administrador de contraseñas como un objeto de una clase l
 `PasswordManager` debe contar con las siguientes funcionalidades:
 
 - **Inicialización**. En el primer uso del administrador, debe brindarse la contraseña maestra (un `str`), a la cual se 
-le aplica una KDF (Key Derivation Function) para usarla como llave (`key`) al encriptar y desencriptar las contraseñas. 
+le aplica una KDF (Key Derivation Function) para usarla como llave (`key`) al encriptar y desencriptar las contraseñas.
+Además, se debe almacenar un hash de la contraseña maestra con una función de hashing, ya que servirá para verificar futuros logins.
 La inicialización del `PasswordManager` crea también un `Vault`, clase que almacenará la información de login del usuario (
     clase de tipo `VaultEntry` la cual almacenará la página, usuario y contraseña encriptada, y un alias (por defecto el dominio de la página).
   )
