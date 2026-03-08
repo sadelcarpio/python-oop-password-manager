@@ -1,13 +1,11 @@
 from typing import Literal
 
-from vault import VaultEntry
-
 
 class PasswordManager:
-    def __init__(self, username: str, password: str):
+    def __init__(self, password: str):
         pass
 
-    def login(self, username: str, password: str):
+    def login(self, password: str):
         pass
 
     def lock(self):

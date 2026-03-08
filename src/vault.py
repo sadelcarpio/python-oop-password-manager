@@ -4,5 +4,5 @@ class Vault:
 
 
 class VaultEntry:
-    def __init__(self, username: str, hashed_password: str, alias: str):
+    def __init__(self, username: str, encrypted_password: str, alias: str):
         pass
