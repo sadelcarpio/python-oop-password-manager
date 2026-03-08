@@ -28,9 +28,9 @@ La inicialización del `PasswordManager` crea también un `Vault`, clase que alm
   )
 
 - **Añadir entradas**. `PasswordManager` debe poseer un método para poder agregar nuevos logins.
-`add_login_entry(self, entry: VaultEntry)` debe encriptar la contraseña con el key obtenido en el primer paso, y 
+`add_login_entry(self, data)` debe encriptar la contraseña con el key obtenido en el primer paso, y 
 agregar la información de login al objeto `Vault`. Por completitud, también deberá tener métodos para eliminar y modificar 
-los logins, `remove_login_entry(self, entry_alias: str)` y `modify_login_entry(self, entry_alias: str, new_entry: VaultEntry)`,
+los logins, `remove_login_entry(self, entry_alias: str)` y `modify_login_entry(self, entry_alias: str, data)`,
 
 - **Mostrar entradas**. `PasswordManager` debe tener la funcionalidad de mostrar la contraseña encriptada de un login al usuario. `show_login_entry(self, entry_alias: str)`
  la cual desencripta la contraseña guardada en el `Vault` y la muestra al usuario.

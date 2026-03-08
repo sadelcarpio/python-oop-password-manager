@@ -13,7 +13,7 @@ class PasswordManager:
     def lock(self):
         pass
 
-    def add_login_entry(self, entry: VaultEntry):
+    def add_login_entry(self, domain: str, username: str, password: str, alias: str = None):
         pass
 
     def show_login_entry(self, entry_alias: str):
@@ -22,7 +22,7 @@ class PasswordManager:
     def remove_login_entry(self, entry_alias: str):
         pass
 
-    def modify_login_entry(self, entry_alias: str, new_entry: VaultEntry):
+    def modify_login_entry(self, domain: str, entry_alias: str, new_username: str, new_password: str):
         pass
 
     def export(self, export_format: str = Literal["csv", "json"]):
