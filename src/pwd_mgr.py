@@ -23,8 +23,8 @@ class PasswordManager:
     def modify_login_entry(self, domain: str, entry_alias: str, new_username: str, new_password: str):
         pass
 
-    def export(self, export_format: str = Literal["csv", "json"]):
+    def export(self, file_path: str, export_format: str = Literal["csv", "json"]):
         pass
 
-    def import_from(self, other_manager: "PasswordManager"):
+    def import_from(self, file_path: str, import_format: Literal["csv", "json"]):
         pass
